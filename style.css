@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+body{
+    background-color: white;
+}
+
+.grid-body{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #A1E3D8;
+}
+
+.header nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+.header nav ul li{
+    margin-left: 15px;
+    margin: 10px;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #069A8E;
+
+}
+
+header nav ul li a:hover{
+    color: #005555;
+    text-shadow: 0;
+    transition: 1s;
+}
+
+header img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+  
+
+
+
+/*--- main ---*/
+/*--- index ---*/
+
+.lau h1 {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: bold;
+    color: black ;
+}
+.lau h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: bold;
+    color: black ;
+}
+
+.inicio{
+    display: grid;
+    width: 90%;
+    background-color: #EFFFFD;
+    padding: 5px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.principio > div{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.principio > div img{
+    width: 500px;
+    height: 700px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.principio div .principal{
+    margin: 40px;
+}
+
+.principal p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+    
+}
+/*--- productos---*/
+
+.productos h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: bold;
+    color: black ;
+}
+.productos p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 50px;
+    margin: auto;
+   
+}
+.inicio-productos{
+    display: grid;
+    width: 90%;
+    background-color: #EFFFFD;
+    padding: 5px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.inicio-productos div{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+  
+
+.inicio-productos div img{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    object-fit: contain;
+}
+
+
+.productos-ches img{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    object-fit: contain;
+}
+
+.productos-marplatense img{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    object-fit: contain;
+}
+
+.productos-sable img{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    object-fit: contain;
+}
+
+/*--- cursos---*/
+
+.curso h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: bold;
+    color: black ;
+ }
+
+ .curso p{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 30px;
+    margin: auto;
+}
+
+.curso{
+    display: grid;
+    width: 90%;
+    background-color: #EFFFFD;
+    padding: 5px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.cursos-online > div{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.cursos-online > div img{
+    width: 300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.cursos-online img{
+    margin: 40px;
+}
+
+/*--- nosotros---*/
+
+.nosotros h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: bold;
+    color: black ;
+}
+
+.nosotros p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+.nosotros{
+    display: grid;
+    width: 90%;
+    background-color: #EFFFFD;
+    padding: 5px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.pasteleria > div{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.pasteleria > div img{
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.pasteleria div img{
+    margin: 10px;
+}
+
+/*---contacto---*/
+.contactate {
+    display: grid;
+    width: 90%;
+    background-color: #EFFFFD;
+    padding: 5px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contacto ul{
+    display: flex;
+    list-style: none;
+    
+}
+.contacto ul li{
+    margin-left: 15px;
+}
+
+.contacto ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact img{
+    width: 50px;
+    height: 100px; 
+    object-fit: contain;
+}
+
+.contact h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: bold;
+    color: black ;
+}
+
+
+/*--- footer---*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A1E3D8;
+    padding: 25px;
+}
+
+footer > img{
+    width: 25px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.footer div img{
+    width: 50px ;
+    height: 50px;
+    object-fit: contain;
+   }
+   
+.footer ul{
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #069A8E;
+
+}
+
+.footer ul li a:hover{
+    color: #005555;
+    text-shadow: 0;
+    transition: 1s;
+}
+
