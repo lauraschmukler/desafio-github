@@ -7,63 +7,47 @@
 html{
     font-size: 100%;
 }
+
 body{
-    background-color: white;
-}
-
-.grid-body{
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: auto;
+   
+    background-color: #EFFFFD;
 }
 
 
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:  #A1E3D8;
+.background-nav{
+    background-color: #A1E3D8;
 }
 
-.header nav ul{
-    display: flex;
-    list-style: none;
-    
-}
-.header nav ul li{
-    margin-left: 15px;
-    margin: 10px;
-}
-
-.header nav ul li a{
+.navbar-nav{
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 2px 2px 2px #069A8E;
+    text-shadow: 2px 2px 2px #069a8e;
 
 }
 
-header nav ul li a:hover{
-    color: #005555;
-    text-shadow: 0;
-    transition: 1s;
-}
 
-header img{
+.header img{
     width: 75px;
     height: 75px;
     object-fit: contain;
 }
-  
-
 
 
 /*--- main ---*/
 /*--- index ---*/
 
-.lau h1 {
+.container{
+    display: grid;
+    grid-template-columns:mrepeat(3, 1fr);
+    grid-template-rows:auto;
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+}
+.container h1{
     display: flex ;
     justify-content: center;
     align-items: center;
@@ -72,7 +56,8 @@ header img{
     font-weight: bold;
     color: black ;
 }
-.lau h5 {
+
+.container h5{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,94 +67,50 @@ header img{
     color: black ;
 }
 
-.inicio{
-    display: grid;
-    width: 90%;
-    background-color: #EFFFFD;
-    padding: 5px;
-    margin: 0 auto;
+.container p{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
     align-items: center;
+    position: sticky;
+    margin: 0 auto;
+    font-size: 20px;
 }
 
-
-.principio > div{
+.container div{
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
 }
-
-.principio > div img{
+.container  div img{
     width: 500px;
     height: 700px;
     background-repeat: no-repeat;
     object-fit: contain;
-}
+    }
 
-.principio div .principal{
-    margin: 40px;
-}
-
-.principal p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 22px;
-    
-}
 /*--- productos---*/
 
-.productos h2{
+.container h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-size: 60px;
+    flex-direction:row;
+    font-size: 50px;
     font-weight: bold;
     color: black ;
 }
-.productos p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 20px;
-    padding: 50px;
-    margin: auto;
-   
-}
-.inicio-productos{
-    display: grid;
-    width: 90%;
-    background-color: #EFFFFD;
-    padding: 5px;
-    margin: 0 auto;
-    align-items: center;
-}
 
-.inicio-productos div{
+.container .productos-ches img{
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
-}
-  
-
-.inicio-productos div img{
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    object-fit: contain;
-}
-
-
-.productos-ches img{
     width: 300px;
     height: 200px;
     margin: 20px;
     object-fit: contain;
 }
-
-.productos-marplatense img{
+.container .productos-marplatense img{
     display: flex;
     flex-direction: row-reverse;
     width: 300px;
@@ -178,7 +119,7 @@ header img{
     object-fit: contain;
 }
 
-.productos-sable img{
+.container .productos-sable img{
     display: flex;
     flex-direction: row-reverse;
     width: 300px;
@@ -189,54 +130,33 @@ header img{
 
 /*--- cursos---*/
 
-.curso h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 60px;
-    font-weight: bold;
-    color: black ;
- }
-
- .curso p{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    padding: 30px;
-    margin: auto;
-}
-
-.curso{
+.container .curso{
     display: grid;
-    width: 90%;
-    background-color: #EFFFFD;
-    padding: 5px;
-    margin: 0 auto;
-    align-items: center;
+    grid-row: 10px;
+    grid-area: auto;
+    grid-column-end:initial;
 }
 
-
-.cursos-online > div{
+.container .cursos > div{
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
 }
 
-.cursos-online > div img{
+.container .cursos  div div div img{
     width: 300px;
     height: 200px;
     background-repeat: no-repeat;
     object-fit: contain;
 }
 
-.cursos-online img{
-    margin: 40px;
+.container .cursos img{
+    margin: 10px;
 }
 
 /*--- nosotros---*/
 
-.nosotros h2{
+.container .nosotros h2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,15 +166,17 @@ header img{
     color: black ;
 }
 
-.nosotros p{
+.container .nosotros p{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 30px;
 }
-.nosotros{
+.container .nosotros{
     display: grid;
+    grid-row:auto;
+    grid-area: auto;
     width: 90%;
     background-color: #EFFFFD;
     padding: 5px;
@@ -263,25 +185,28 @@ header img{
 }
 
 
-.pasteleria > div{
+.container .pasteleria > div{
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
 }
 
-.pasteleria > div img{
+.container .pasteleria > div img{
     width: 400px;
     height: 300px;
     background-repeat: no-repeat;
     object-fit: contain;
 }
-.pasteleria div img{
+.container .pasteleria div img{
     margin: 10px;
 }
 
 /*---contacto---*/
-.contactate {
+.container .contact {
     display: grid;
+    grid-template:none;
+    grid-template-rows: auto;
+    grid-area: 100%;
     width: 90%;
     background-color: #EFFFFD;
     padding: 5px;
@@ -289,29 +214,30 @@ header img{
     align-items: center;
 }
 
-.contacto ul{
+.container .contacto ul{
     display: flex;
+    flex-direction: row;
     list-style: none;
     
 }
-.contacto ul li{
+.container .contacto ul li{
     margin-left: 15px;
 }
 
-.contacto ul li a{
+.container .contacto ul li a{
     text-decoration: none;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.contact img{
+.container .contact img{
     width: 50px;
     height: 100px; 
     object-fit: contain;
 }
 
-.contact h2{
+.container .contact h2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,7 +250,7 @@ header img{
 
 /*--- footer---*/
 
-.footer {
+.footer-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -332,22 +258,24 @@ header img{
     padding: 25px;
 }
 
-footer > img{
+.footer-container > img{
     width: 25px;
     height: 50px;
     object-fit: contain;
+  
 }
 
-.footer div img{
+.footer-container div img{
     width: 50px ;
     height: 50px;
     object-fit: contain;
+   
    }
    
-.footer ul{
+ .footer-container ul{
     list-style: none;
 }
-.footer ul li a{
+.footer-container ul li a{
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -356,9 +284,152 @@ footer > img{
 
 }
 
-.footer ul li a:hover{
+.footer-container ul li a:hover{
     color: #005555;
     text-shadow: 0;
     transition: 1s;
 }
 
+@media (min-width:340px) and  (max-width:540px) {
+    .footer-container{
+        background-color: #A1E3D8;
+    }
+    .footer-container div img{
+        width: 20px ;
+        height: 20px ;
+        object-fit: contain;
+    }
+    .container  div img{
+        width: 200px;
+        height: 300px;
+    }
+    
+.background-nav{
+    background-color: #A1E3D8;
+}
+.container h1{
+    font-size: 30px;
+}
+.container h5{
+    font-size: 10px;
+}
+.container p{
+    font-size: 15px;
+}
+.container  div img{
+    width: 300px;
+    height: 400px;
+}
+.container h2{
+    font-size: 30px;
+}
+.container .productos-ches img{
+    width: 200px ;
+    height: 100px ;
+    object-fit: contain;
+}
+.container .productos-marplatense img{
+    width: 200px ;
+    height: 100px;
+    object-fit: contain;
+}
+.container .productos-sable img{
+    width: 200px ;
+    height:100px ;
+    object-fit: contain;
+}
+.container .cursos img{
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.container .maca img{
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.container .butter img{
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.container .nosotros p{
+    font-size: 10px;
+    clear: right;
+}
+.container .nosotros h2{
+    font-size: 20px;
+}
+.container .pasteleria > div img{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+.footer-container h6{
+    font-size: 10px;
+}
+}
+
+@media   (min-width:541px) and (max-width: 760px){
+    .footer-container{
+        background-color: #A1E3D8;
+    }
+    .footer-container div img{
+        width: 25px ;
+        height: 35px ;
+        object-fit: contain;
+    }
+    .container h1{
+        font-size: 50px;
+    }
+    .container h5{
+        font-size: 20px;
+    }
+    .container p{
+        font-size: 20px;
+    }
+    .container  div img{
+        width: 400px;
+        height: 600px;
+    }
+    .container h2{
+        font-size: 40px;
+    }
+    .container .productos-ches img{
+        width: 250px ;
+        height: 150px;
+        margin: 10px;
+        object-fit: contain;
+    
+    }
+    .container .productos-ches p{
+        font-size: 15px;
+
+    }
+    .container .productos-marplatense img{
+        width: 250px ;
+        height: 150px;
+        margin: 10px;
+        object-fit: contain;
+    }
+    .container .productos-sable img{
+        width: 250px ;
+        height:150px ;
+        object-fit: contain;
+    }
+    .container .cursos  div div div img{
+        width: 250px;
+        height: 150px;
+        background-repeat: no-repeat;
+        object-fit: contain;
+    }
+    .container .nosotros p{
+        font-size: 25px;
+    }
+    .container .nosotros h2{
+        font-size: 40px;
+    }
+    }
